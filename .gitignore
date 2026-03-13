@@ -1,6 +1,34 @@
-# Cloned project repositories — tracked by their own git remotes, not this workspace
-# Matches <project>/repo/ for any project folder at workspace root
+# Whitelist: track only workspace infrastructure.
+# Any project silo added to the workspace root is automatically excluded.
+/*
+
+# Workspace infrastructure — explicitly tracked
+!.gitignore
+!CLAUDE.md
+!CONTEXT.md
+!README.md
+!_config/
+!_shared/
+!_project-template/
+!setup/
+
+# Safety net: never track cloned repositories even if the whitelist is extended
 */repo/
+
+# Secrets — never track regardless of location
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.cert
+*.crt
+secrets.json
+secrets.yaml
+secrets.yml
+*secrets*
+*credentials*
 
 # OS
 .DS_Store
