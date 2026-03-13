@@ -82,7 +82,3 @@ Open `CONTEXT.md` and tell the agent what you want to do.
 | 4 | `<project>/02_development/tasks/`, `<project>/03_output/artifacts/`, `<project>/repo/` | Working artifacts | varies |
 
 Each stage loads only Layers 0–2 plus the Layer 3 and 4 files it declares in its Inputs section. No stage loads the entire workspace.
-
-## License
-
-MIT
