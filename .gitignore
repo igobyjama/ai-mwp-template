@@ -1,0 +1,12 @@
+# Cloned project repositories — tracked by their own git remotes, not this workspace
+# Matches <project>/repo/ for any project folder at workspace root
+*/repo/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
